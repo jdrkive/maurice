@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orange and White Business Website</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 130vh;
+            background-color: #FE973A; /* Orange background */
+            background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.1) 25%, transparent 25%, transparent 50%, rgba(255, 255,255, 0.1) 50%, rgba(255, 255, 255, 0.1) 75%, transparent 75%, transparent);
+            background-size: 80px 80px;
+            animation: shine 2s linear infinite;
+        }
+
+        @keyframes shine {
+            0% {
+                background-position: 0 0;
+            }
+            100% {
+                background-position: 80px 80px;
+            }
+        }
+
+        .header {
+            width: 100%;
+            background-color: #FFF; /* White background for the header */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .logo {
+            max-width: 100px; /* Adjust the logo size as needed */
+        }
+
+        .store-name {
+            font-size: 40px; /* Adjust the font size as needed */
+            font-weight: bold;
+            white-space: nowrap;
+            animation: colorChange 3s infinite;
+        }
+
+        .phrase {
+            font-size: 60px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-weight: bold;
+            white-space: nowrap;
+            color: #ffffff;
+            text-align: center;
+            margin: 30px; /* Added margin to separate it from the header */
+        }
+
+        .finest {
+            color: #f1ad59;
+            animation: highlight 3s infinite;
+        }
+
+        .buttons {
+            margin-top: 20px;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #FFF;
+            color: #FE973A;
+            font-weight: bold;
+            text-decoration: none;
+            margin: 0 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .button:hover {
+            background-color: #F47C00; /* Darker orange on hover */
+            color: #FFF;
+        }
+
+        .best-seller {
+            font-size: 40px;
+            color: #FFF;
+            font-weight: bold;
+            -webkit-background-clip: text;
+            background-clip: text;
+            text-align: center;
+            animation: bounce 1s infinite;
+        }
+
+        .best-seller-highlight{
+            color: #f1ad59;
+            animation: highlight 3s infinite;
+        }
+
+        .sushi-menu {
+            text-align: center;
+            margin-top: 10px; /* Adjusted margin to create space below the phrase */
+        }
+
+        .sushi-item {
+            background-color: #FFF;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin: 10px;
+            width: 300px;
+            display: inline-block;
+        }
+
+        .sushi-item img {
+            max-width: 100%;
+            transition: transform 0.3s;
+        }
+
+        .sushi-item:hover img {
+            transform: scale(1.1); /* Bouncy effect on hover */
+        }
+
+        .sushi-description {
+            font-size: 15px;
+            color: #333;
+            line-height: 1.50;
+            margin-top: 10px;
+            text-align: justify;
+        }
+
+        .image-under-phrase {
+            margin: 10 px; /* Adjust the margin to separate from the phrase */
+        }
+
+        @keyframes colorChange {
+            0%, 10% {
+                color: #F47C00;
+            }
+            20%, 30% {
+                color: #A6AE3E;
+            }
+            40%, 50% {
+                color: #f1ad59;
+            }
+            60%, 70% {
+                color: #F4C303;
+            }
+            80%, 90% {
+                color: #ED4A07;
+            }
+        }
+
+        @keyframes highlight {
+            0%, 100% {
+                background: none;
+                color: #242322;
+            }
+            50% {
+                background: #f1ad59;
+                color: #fff;
+            }
+        }
+
+    
+        @keyframes bounce {
+        0%, 20%, 50%, 80%, 100% {
+            transform: translateY(0);
+        }
+        40% {
+            transform: translateY(-5px);
+        }
+        60% {
+            transform: translateY(-3px);
+        }
+    }
+
+        .slideshow-container {
+            position: relative;
+            max-width: 100%;
+            margin: auto;
+        }
+
+        .mySlides {
+            display: none;
+            animation: fade 2s;
+        }
+
+        .mySlides img {
+            max-width: 100%;
+        }
+
+        @keyframes fade {
+            0% {
+                opacity: 0;
+            }
+            20% {
+                opacity: 1;
+            }
+            80% {
+                opacity: 1;
+            }
+            100% {
+                opacity: 0;
+            }
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img src="sushi logo.png" alt="Logo" class="logo">
+        <div class="store-name"><span style="color: #F47C00;">S</span>us<span style="color: #A6AE3E;">h</span>i<span style="color:#f1ad59;"> S</span>e<span style="color: #F4C303;">r</span>e<span style="color: #ED4A07;">n</span>i<span style="color: #FFC784;">t</span>y</div>
+        <div class="buttons">
+            <a href="#" class="button">Home</a>
+            <a href="#" class="button">Menu</a>
+            <a href="#" class="button">Reservation</a>
+            <a href="#" class="button">About Us</a>
+            <a href="#" class="button">Contact Us</a>
+            <a href="#" class="button" id="cvButton">Curriculum Vitae</a>
+            
+        </div>
+    </div>
+    
+    <div class="phrase">Savor the <span class="finest">Finest</span> Sushi<br>in Sushi Serenity</div>
+    <div class="slideshow-container">
+        <div class="mySlides">
+            <img src="bottom pic1.png" alt="Sushi Image 1">
+        </div>
+        <div class="mySlides">
+            <img src="bottom pic2.png" alt="Sushi Image 2">
+        </div>
+        <div class="mySlides">
+            <img src="bottom pic3.png" alt="Sushi Image 3">
+        </div>
+    </div>
+    
+    <!-- Sushi Menu Section -->
+    <div class="best-seller"> Taste the <span class="best-seller-highlight">BEST SELLING </span> Sushi in Sushi Serenity</div>
+    <div class="sushi-menu">
+        <div class="sushi-item">
+            <img src="california.png" alt="Sushi Type 1">
+            <div class="sushi-description">
+                <h3>California Roll Sushi</h3>
+                <p>At Sushi Serenity, the California Roll is a delightful creation that combines creamy avocado, crisp cucumber, 
+                    and sweet imitation crab, all wrapped in a delicate sheet of nori and perfectly seasoned rice. It's a harmonious blend 
+                    of flavors and textures that's both satisfying and delicious. Must try!</p>
+            </div>
+        </div>
+
+        <div class="sushi-item">
+            <img src="sake.png" alt="Sushi Type 2">
+            <div class="sushi-description">
+                <h3>Sake Sushi</h3>
+                <p>Our Sake Sushi features tender, thinly sliced, and expertly seared salmon atop a bed of seasoned sushi rice. This delightful fusion of 
+                    flavors combines the richness of the salmon with the delicate balance of the rice, making it a perfect choice for sushi lovers seeking a mouthwatering experience.</p>
+            </div>
+        </div>
+
+        <div class="sushi-item">
+            <img src="maki.png" alt="Sushi Type 3">
+            <div class="sushi-description">
+                <h3>Maki Sushi</h3>
+                <p>Our Maki Sushi is a culinary work of art, hand-rolled to perfection. Inside, you'll find a delightful medley of fresh ingredients, from creamy avocado to 
+                    crisp cucumber and your choice of delectable fillings. Each bite is a harmonious blend of flavors, delivering a taste of serenity with every roll.</p>
+            </div>
+        </div>
+    </div>
+    <script>
+        // JavaScript for the continuous image slideshow
+        let slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            let i;
+            const slides = document.getElementsByClassName("mySlides");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {
+                slideIndex = 1;
+            }
+            slides[slideIndex - 1].style.display = "block";
+            setTimeout(showSlides, 2000); // Change image every 2 seconds
+        }
+    // JavaScript for handling CV button click
+    document.getElementById("cvButton").addEventListener("click", function() {
+        // Replace the URL with the actual path to your CV page or file
+        window.location.href = "mauricio.html";
+    });
+
+    </script>
+
+</body>
+</html>

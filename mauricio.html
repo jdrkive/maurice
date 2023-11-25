@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maurice Joy Ramos - Curriculum Vitae</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+
+        header {
+            background-color: #333;
+            color: #FFF;
+            text-align: center;
+            padding: 20px;
+        }
+
+        h1, h2 {
+            color: #F47C00;
+            position: relative;
+            animation: fadeInUp 1.5s ease-out;
+        }
+
+        h1::after, h2::after {
+            content: "";
+            display: block;
+            width: 100%;
+            height: 1px;
+            background-color: #F47C00;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            transform-origin: 0% 0%;
+            transform: scale(0, 1);
+            transition: transform 0.5s ease-out;
+        }
+
+        h1:hover::after, h2:hover::after {
+            transform: scale(1, 1);
+        }
+
+        section {
+            margin: 20px;
+            background-color: #FFF;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li::before {
+            content: "• ";
+            color: #F47C00;
+            font-weight: bold;
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
+        }
+
+        @keyframes fadeInUp {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Maurice Joy S. Ramos</h1>
+        <p>Curriculum Vitae</p>
+    </header>
+
+    <section>
+        <h2>Contact Information</h2>
+        <p>Email: mauricejoyr@gmail.com</p>
+        <p>Phone: 09979564187</p>
+        <p>LinkedIn: linkedin.com/in/yojiii</p>
+    </section>
+
+    <section>
+        <h2>Education</h2>
+        <p><strong>Bachelor of Science in Information Technology </strong></p>
+        <p>Bulacan State University, 2020</p>
+    </section>
+
+    <section>
+        <h2>Work Experience</h2>
+        <p><strong>Mobile & Web Developer</strong></p>
+        <p>MSR Inc., 2020 - Present</p>
+        <ul>
+            <li>Assisted in troubleshooting hardware and software issues, providing timely solutions to end-users.</li>
+            <li>Installed and configured operating systems, software applications, and security patches on desktops and laptops.</li>
+            <li>Collaborated with the IT team to perform routine system maintenance and updates.</li>
+            <li>Provided technical support for users via email, phone, and in-person, ensuring prompt issue resolution.</li>
+            <li>Assisted in the setup and maintenance of network infrastructure, including routers, switches, and firewalls.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Skills</h2>
+        <ul>
+            <li>HTML5, CSS3, JavaScript</li>
+            <li>React, Angular</li>
+            <li>Node.js, Express.js</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Languages</h2>
+        <ul>
+            <li>Filipino</li>
+            <li>English</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>References</h2>
+        <p>Available upon request.</p>
+    </section>
+</body>
+</html>
